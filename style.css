@@ -291,56 +291,122 @@ section.home {
     transform: translateY(-2px); /* Slightly raise the button */
 }
 
-/* Skills, Experience, Education Cards */
-.skills, .experience, .education {
-    background-color: #ffffff; /* White background for these sections */
-    border-radius: 10px; /* Rounded corners */
-    color: black; /* Black text color */
-    padding: 20px; /* Padding inside the cards */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+
+
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
 }
 
-.skills:hover, .experience:hover, .education:hover {
-    transform: scale(1.05); /* Slightly enlarge the card on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deepen shadow on hover */
+.about-section .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-h2 {
-    color: #ffffff; /* Dark color for section headings */
-    font-size: 1.5rem; /* Standard size for section headings */
-    margin-bottom: 15px; /* Space below each section heading */
+.profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* List Styles */
-ul.list-unstyled li {
-    font-size: 1.25rem; /* Increased font size for list items */
-    margin-bottom: 10px; /* Space between list items */
+.about-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 5px;
 }
 
-ul.list-unstyled li i {
-    color: #1b192f; /* Dark color for icons */
-    margin-right: 10px; /* Space between icon and text */
+.intro-name {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 10px 0;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .about-section {
-        padding: 30px 10px; /* Adjust padding on smaller screens */
-    }
-
-    .intro, .skills, .experience, .education {
-        padding: 15px; /* Reduce padding for smaller screens */
-    }
-
-    .intro-heading, h2 {
-        font-size: 1.75rem; /* Adjust heading size for smaller screens */
-    }
-
-    .intro-text, ul.list-unstyled li {
-        font-size: 1rem; /* Adjust text size for readability */
-    }
+.intro-text, .intro-description {
+    font-size: 2rem;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
+
+.btn.intro-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+/* Process Section Styling */
+.process-section {
+    padding: 40px 0;
+}
+
+.process-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.icon-box {
+    flex: 0 0 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #666;
+    margin-right: 20px;
+}
+
+.icon-box i {
+    color: #fff;
+}
+
+.content-box {
+    flex: 1;
+}
+
+.content-box h3 {
+    font-size: 2.25rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.content-box p {
+    font-size: 2rem;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Adjusting colors for each section */
+.process-item:nth-child(1) .icon-box {
+    background-color: #4CAF50;
+}
+
+.process-item:nth-child(2) .icon-box {
+    background-color: #FFC107;
+}
+
+.process-item:nth-child(3) .icon-box {
+    background-color: #F44336;
+}
+
+.process-item:nth-child(4) .icon-box {
+    background-color: #9f86fa41;
+}
+
 
 
 
@@ -404,142 +470,68 @@ ul.list-unstyled li i {
     gap: 1rem; /* Space between icons */
 }
 
-.contact {
-    font-size: 1.25rem; /* Increase font size for all text */
-    padding: 2rem; /* Add padding around the contact info */
-    background-color: rgba(255, 255, 255, 0.1); /* Optional: Light background for emphasis */
-    border-radius: 8px; /* Optional: Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow for depth */
+
+
+
+.contact-section {
+    padding: 60px 0;
 }
-
-.contact h1 {
-    font-size: 2rem; /* Larger size for the heading */
-    margin-bottom: 1rem; /* Space below the heading */
-}
-
-.contact p {
-    font-size: 1.25rem; /* Increase font size for paragraphs */
-}
-
-
-/* Optional: Add media queries for responsiveness */
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: center; /* Center items */
-    }
-    
-    .socialicon {
-        margin-top: 0.5rem; /* Reduced space above social icons */
-    }
-}
-
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px 20px;
-}
-
-.about-section .row {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.profile-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.about-heading {
-    font-size: 2.5rem;
-    font-weight: bold;
+.contact-section .left-content {
+    font-size: 1.5rem;
     color: #ffffff;
+}
+.contact-section .left-content h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.contact-section .left-content p {
+    font-size: 2rem;
+    margin-top: 15px;
+    color: #ffffff;
+}
+.contact-section .left-content .email-link {
+    font-weight: 500;
+    color: #333;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.contact-section .contact-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+.contact-section .contact-form h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000000;
+}
+.contact-section .contact-form .form-control {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 1.5rem;
     margin-bottom: 15px;
 }
-
-.intro-name {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #d7263d;
-    margin: 10px 0;
-}
-
-.intro-text, .intro-description {
-    font-size: 2rem;
-    color: #ffffff;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-.btn.intro-btn {
-    display: inline-block;
-    padding: 10px 20px;
+.contact-section .contact-form button[type="submit"] {
     font-size: 1rem;
-    background-color: #333;
+    font-weight: 600;
+    padding: 12px 20px;
     color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 20px;
+    background-color: #262bcb;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-/* Process Section Styling */
-.process-section {
-    padding: 40px 0;
+.contact-section .contact-form button[type="submit"]:hover {
+    background-color: #00258b;
 }
-
-.process-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 20px;
-}
-
-.icon-box {
-    flex: 0 0 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #f1f1f1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    color: #666;
-    margin-right: 20px;
-}
-
-.icon-box i {
-    color: #fff;
-}
-
-.content-box {
-    flex: 1;
-}
-
-.content-box h3 {
-    font-size: 2.25rem;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.content-box p {
-    font-size: 2rem;
-    color: #ffffff;
-    line-height: 1.6;
-}
-
-/* Adjusting colors for each section */
-.process-item:nth-child(1) .icon-box {
-    background-color: #4CAF50;
-}
-
-.process-item:nth-child(2) .icon-box {
-    background-color: #FFC107;
-}
-
-.process-item:nth-child(3) .icon-box {
-    background-color: #F44336;
-}
-
