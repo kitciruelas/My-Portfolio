@@ -420,7 +420,8 @@ section.home {
 
 /* pROJECTS */
 .project-card {
-    width: 300px; /* Fixed width for cards */
+    width: 500px; /* Fixed width for cards */
+    height: 400px;
     margin: auto; /* Center cards within their column */
     border: 1px solid #ddd; /* Light border for cards */
     border-radius: 8px; /* Slightly rounded corners */
@@ -521,17 +522,70 @@ section.home {
     margin-bottom: 15px;
 }
 .contact-section .contact-form button[type="submit"] {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 12px 20px;
     color: #fff;
     background-color: #262bcb;
     border: none;
     border-radius: 8px;
-    width: 100%;
+    width: 50%;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 .contact-section .contact-form button[type="submit"]:hover {
     background-color: #00258b;
+}
+
+.swiper-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-heading {
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Add some space at the top */
+    font-size: 2rem; /* Adjust font size if necessary */
+    font-weight: bold;
+    color: #333; /* Adjust color to match gallery theme */
+}
+
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 8px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
 }
